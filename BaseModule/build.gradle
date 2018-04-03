@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 26
 
@@ -38,4 +39,7 @@ dependencies {
     // Support-v4 (only Anko Commons)
     compile "org.jetbrains.anko:anko-support-v4-commons:$anko_version"
 
+}
+repositories {
+    mavenCentral()
 }
